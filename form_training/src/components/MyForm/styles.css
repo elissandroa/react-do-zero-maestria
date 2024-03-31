@@ -1,0 +1,12 @@
+.form-container input {
+    border-radius: 5px;
+    margin-bottom: 5px;
+    height: 30px;
+    width: 300px;
+    padding-left: 10px;
+}
+
+.form-container button {
+    border: 1px solid black;
+    width: 315px;
+}
