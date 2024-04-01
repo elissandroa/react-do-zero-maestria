@@ -23,7 +23,6 @@ export const useFetch = async (url) => {
 
   useEffect(() => {
     const fetchData = async () => {
-        console.log("fetchData");
       const res = await fetch(url);
 
       const json = await res.json();
@@ -35,7 +34,6 @@ export const useFetch = async (url) => {
 
   useEffect(() => {
     const httpRequest = async () => {
-        console.log("httpRequest");
       if (method === "POST") {
         let fetchOptions = [url, config];
         const res = await fetch(...fetchOptions);
@@ -45,7 +43,6 @@ export const useFetch = async (url) => {
     };
     httpRequest();
   }, [config, method, url]);
-  console.log(config);
 
   return { data, httpConfig };
 };
